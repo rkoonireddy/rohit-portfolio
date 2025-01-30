@@ -1,41 +1,19 @@
 {
   "name": "rohit-portfolio",
-  "homepage": "https://rohit.ovh/",
-  "version": "0.0.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rkoonireddy/typescipt-react"
-  },
   "private": true,
-  "dependencies": {
-    "browserslist": "^4.24.2",
-    "gh-pages": "^6.2.0",
-    "jquery": "^3.2.1",
-    "personalportfolio": "file:",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-ga": "^2.3.5",
-    "react-scripts": "^5.0.1",
-    "rohit-portfolio": "file:"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -b website",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.4",
+    "typescript": "5.7.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
   }
 }
